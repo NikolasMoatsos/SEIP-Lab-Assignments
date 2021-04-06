@@ -11,7 +11,7 @@
   	<description>This is the 2nd lab assignment for the SEIP course.</description>
   
   	<modules>
-  			<module>gradeshistogram</module>
+  		<module>gradeshistogram</module>
   	</modules>
   
 </project>
