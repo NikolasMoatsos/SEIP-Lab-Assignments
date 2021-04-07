@@ -10,7 +10,7 @@
   
 	<artifactId>gradeshistogram</artifactId>
   	<name>Grades-Histogram</name>
-  	<description>A histogram with grades.</description>
+  	<description>A histogram with grades' frequency.</description>
   
   	<dependencies>
   		<!-- https://mvnrepository.com/artifact/org.jfree/jfreechart -->

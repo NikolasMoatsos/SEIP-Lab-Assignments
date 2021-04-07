@@ -13,11 +13,10 @@ import java.io.FileNotFoundException;
 /**
  * <h1>Generate Histogram with Grades</h1>
  * The HistogramGenerator takes as an input a file with Integer grades, from the
- * command line and generates a histogram, using the JFreeChart charting library.
+ * command line and generates a histogram with the grades' frequency, using the JFreeChart charting library.
  * @author Nikolas Moatsos
  * @since April 2021
  */
-
 public class HistogramGenerator {
 	
 	/**
