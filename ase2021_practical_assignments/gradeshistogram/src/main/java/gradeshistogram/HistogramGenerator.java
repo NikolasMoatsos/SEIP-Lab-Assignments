@@ -40,11 +40,30 @@ public class HistogramGenerator {
 	}
 	
 	/**
-	 * This method visualizes an array with Integer grades with a histogram
-	 * from the JFreeChart charting library.
+	 * This method creates an array with the frequency of every grade.
 	 * @param grades This is an array with Integer grades.
+	 * @return int[] This is an array with the frequency of every grade.
 	 */
-	public void generateHistogram(int[] grades) {
+	public int[] createFrequencies(int[] grades) {
+		
+		// Initialize the array.
+		int freq[] = new int[11];
+		
+		// Compute the frequency of every grade.
+		for (int i = 0; i < grades.length; i++) {
+			freq[grades[i]] += 1; 
+		}
+		
+		// Return the array. 
+		return freq;
+	}
+	
+	/**
+	 * This method visualizes an array with the grades' frequencies, with a XYLineChart
+	 * from the JFreeChart charting library.
+	 * @param freq This is an array with the frequency of every grade.
+	 */
+	public void generateHistogram(int[] freq) {
 		
 		/*
 		 * The XYSeriesCollection object is a set XYSeries series (dataset) that
@@ -59,8 +78,8 @@ public class HistogramGenerator {
 		 * Populating the XYSeries data object from the input Integer array
 		 * values.
 		 */
-		for (int i = 0; i < grades.length; i++) {
-			data.add(i, grades[i]);
+		for (int i = 0; i < freq.length; i++) {
+			data.add(i, freq[i]);
 		}
 		
 		// Add the series to the dataset.
@@ -71,7 +90,7 @@ public class HistogramGenerator {
 		boolean urls = false; // do not visualize urls
 		
 		// Declare and initialize a createXYLineChart JFreeChart.
-		JFreeChart chart = ChartFactory.createXYLineChart("Grades Histogram", "Number of Grade", "Grade", dataset,
+		JFreeChart chart = ChartFactory.createXYLineChart("Grades Histogram", "Grade", "Frequency", dataset,
 				PlotOrientation.VERTICAL, legend, tooltips, urls);
 		
 		/*
@@ -85,7 +104,6 @@ public class HistogramGenerator {
 		frame.setVisible(true);
 		
 	}
-	
 	
 	public static void main (String args[]) {
 		
@@ -104,6 +122,7 @@ public class HistogramGenerator {
 		// Generate the histogram.
 		HistogramGenerator gen = new HistogramGenerator();
 		int grades[] = gen.readGrades(input);
-		gen.generateHistogram(grades);
+		int freq[] = gen.createFrequencies(grades);
+		gen.generateHistogram(freq);
 	}
 }
