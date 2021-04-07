@@ -20,49 +20,31 @@ import java.io.FileNotFoundException;
 public class HistogramGenerator {
 	
 	/**
-	 * This method passes the values from the file to a static array of Integers.
+	 * This method reads the grades from the file and creates an array with the
+	 * grades' frequencies.
 	 * @param input This is a file with Integer grades.
-	 * @return int[] This is an array with Integer grades.
+	 * @return int[] This is an array with the frequency of every grade.
 	 */
-	public int[] readGrades(Scanner input) {
+	public int[] createFrequencies(Scanner input) {
 		
 		// Initialize the array.
-		int grades[] = new int[149];
+		int gradesFreq[] = new int[11];
 		
-		// Pass the grades from the file to the array.
-		for (int i = 0; i < 149; i++) {
-			grades[i] = input.nextInt();
+		// Compute the frequency of every grade.
+		while (input.hasNext()) {
+			gradesFreq[input.nextInt()] += 1;
 		}
 		
 		// Return the array.
-		return grades;
-	}
-	
-	/**
-	 * This method creates an array with the frequency of every grade.
-	 * @param grades This is an array with Integer grades.
-	 * @return int[] This is an array with the frequency of every grade.
-	 */
-	public int[] createFrequencies(int[] grades) {
-		
-		// Initialize the array.
-		int freq[] = new int[11];
-		
-		// Compute the frequency of every grade.
-		for (int i = 0; i < grades.length; i++) {
-			freq[grades[i]] += 1; 
-		}
-		
-		// Return the array. 
-		return freq;
+		return gradesFreq;
 	}
 	
 	/**
 	 * This method visualizes an array with the grades' frequencies, with a XYLineChart
 	 * from the JFreeChart charting library.
-	 * @param freq This is an array with the frequency of every grade.
+	 * @param gradesFreq This is an array with the frequency of every grade.
 	 */
-	public void generateHistogram(int[] freq) {
+	public void generateHistogram(int[] gradesFreq) {
 		
 		/*
 		 * The XYSeriesCollection object is a set XYSeries series (dataset) that
@@ -77,8 +59,8 @@ public class HistogramGenerator {
 		 * Populating the XYSeries data object from the input Integer array
 		 * values.
 		 */
-		for (int i = 0; i < freq.length; i++) {
-			data.add(i, freq[i]);
+		for (int i = 0; i < gradesFreq.length; i++) {
+			data.add(i, gradesFreq[i]);
 		}
 		
 		// Add the series to the dataset.
@@ -120,8 +102,7 @@ public class HistogramGenerator {
 		
 		// Generate the histogram.
 		HistogramGenerator gen = new HistogramGenerator();
-		int grades[] = gen.readGrades(input);
-		int freq[] = gen.createFrequencies(grades);
-		gen.generateHistogram(freq);
+		int gradesFreq[] = gen.createFrequencies(input);
+		gen.generateHistogram(gradesFreq);
 	}
 }
