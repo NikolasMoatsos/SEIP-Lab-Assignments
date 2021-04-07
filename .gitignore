@@ -30,3 +30,6 @@ hs_err_pid*
 
 # Maven output files and directories
 target/
+
+# Javadocs
+doc/
