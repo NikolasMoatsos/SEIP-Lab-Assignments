@@ -10,6 +10,12 @@
 	<name>Lab-Assignment-2</name>
 	<description>This is the 2nd lab assignment for the SEIP course.</description>
 
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
 	<modules>
 		<module>gradeshistogram</module>
 	</modules>
