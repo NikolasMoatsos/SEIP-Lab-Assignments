@@ -1,5 +1,5 @@
 # SEIP-Lab-Assignments
-This repository contains the Lab Assignments for the needs of the Software Eningineering in Practice (SEiP) course offered by the [Department of Management Science & Technology](https://www.dept.aueb.gr/en/dmst) of the Athens University of Economics and Business.
+This repository contains the Lab Assignments for the needs of the Software Engineering in Practice (SEiP) course offered by the [Department of Management Science & Technology](https://www.dept.aueb.gr/en/dmst) of the Athens University of Economics and Business.
 
 ## Assignments:
 1. [Grades Histogram - Build Automation Tools](#build) 
