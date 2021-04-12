@@ -2,11 +2,11 @@
 This repository contains the Lab Assignments for the needs of the Software Eningineering in Practice (SEiP) course offered by the [Department of Management Science & Technology](https://www.dept.aueb.gr/en/dmst) of the Athens University of Economics and Business.
 
 ## Assignments:
-1. [Build Automation Tools](#build) 
+1. [Grades Histogram - Build Automation Tools](#build) 
 
 ---
 
-## <a name="build"></a>Build Automation Tools
+## <a name="build"></a>Grades Histogram - Build Automation Tools
 
 **Description**
 
