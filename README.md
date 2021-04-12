@@ -18,6 +18,7 @@ that reads a file with students’ grades, and generates a histogram according t
 - Apache Maven 3.8.1
 - Java 1.8
 - Eclipse IDE
+- [JFreeChart](https://www.jfree.org/jfreechart/) charting Java library
 
 **How to Build and Run**
 
