@@ -24,7 +24,7 @@ that reads a file with students’ grades, and generates a histogram according t
 
 Make sure you have installed properly Git, Maven and Java.
 
-1. Clone this repository.
+1. Clone this repository, with the command: <code>git clone https://github.com/NikolasMoatsos/SEIP-Lab-Assignments.git</code>.
 2. Enter to your local copy of this repository, with the command: <code>cd SEIP-Lab-Assignments</code>.
 3. Build the Maven project, with the command: <code>mvn install</code>.
 4. Enter the target directory to find the jar file, with the command: <code>cd gradeshistogram</code> , <code>cd target</code>.
