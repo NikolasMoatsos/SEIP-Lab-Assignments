@@ -3,14 +3,14 @@
 This is a Java assignment serving as a brief demonstration for Unit Testing within the Software Engineering in Practice course. It makes use of Maven to automate the build process.
 
 ## Java classes
-- ArithmeticOperations: A class that provides the arithmetic operations of division and multiplication.
-- MyMath: A class that provides the arithmetic operation of the factorial.
+- **ArithmeticOperations**: A class that provides the arithmetic operations of division and multiplication.
+- **MyMath**: A class that provides the arithmetic operation of the factorial.
 
 ## Java Test Classes
-- ArithmeticOperationsTest: Test cases for the ArithmeticOperations class.
-- MyMathParameterizedTest: Parameterized test cases for the MyMath class.
-- MyMathTest: Test cases for the exceptions of the MyMath class.
-- MyMathTestSuite: A test suite to run the test cases of the MyMathParameterizedTest and MyMathTest classes.
+- **ArithmeticOperationsTest**: Test cases for the ArithmeticOperations class.
+- **MyMathParameterizedTest**: Parameterized test cases for the MyMath class.
+- **MyMathTest**: Test cases for the exceptions of the MyMath class.
+- **MyMathTestSuite**: A test suite to run the test cases of the MyMathParameterizedTest and MyMathTest classes.
 
 ## Technologies used
 - Git, Github
