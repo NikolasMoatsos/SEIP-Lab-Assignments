@@ -5,6 +5,7 @@ This repository contains the Lab Assignments for the needs of the Software Engin
 
 ## Assignments:
 1. [Grades Histogram - Build Automation Tools](#build) 
+2. [Unit Testing](#unittesting)
 
 ---
 
@@ -34,3 +35,7 @@ Make sure you have installed properly Git, Maven and Java.
 6. Execute the jar file, with the command: <code>java -jar gradeshistogram-0.0.1-SNAPSHOT-jar-with-dependencies.jar grades.txt</code>.
 
 *Note that the gradeshistogram-0.0.1-SNAPSHOT.jar is not executable.*
+
+## <a name="unittesting"></a>Unit Testing
+
+See more details about the Unit Testing assignment in the according [README.md](https://github.com/NikolasMoatsos/SEIP-Lab-Assignments/blob/development/unittesting/README.md).
