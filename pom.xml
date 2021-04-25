@@ -8,7 +8,7 @@
 	<packaging>pom</packaging>
 
 	<name>Lab-Assignments</name>
-	<description>This is the lab assignments for the SEIP course.</description>
+	<description>These are the lab assignments for the SEIP course.</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
