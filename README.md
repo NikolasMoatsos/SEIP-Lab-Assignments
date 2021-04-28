@@ -1,5 +1,6 @@
 # SEIP-Lab-Assignments
 [![Build Status](https://travis-ci.com/NikolasMoatsos/SEIP-Lab-Assignments.svg?token=hsTvfFtqwpyWiMP9NiyE&branch=main)](https://travis-ci.com/NikolasMoatsos/SEIP-Lab-Assignments)
+[![codecov](https://codecov.io/gh/NikolasMoatsos/SEIP-Lab-Assignments/branch/main/graph/badge.svg?token=7CQHIBNVSK)](https://codecov.io/gh/NikolasMoatsos/SEIP-Lab-Assignments)
 
 This repository contains the Lab Assignments for the needs of the Software Engineering in Practice (SEiP) course offered by the [Department of Management Science & Technology](https://www.dept.aueb.gr/en/dmst) of the Athens University of Economics and Business.
 
