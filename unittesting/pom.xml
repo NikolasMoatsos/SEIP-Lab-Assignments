@@ -8,7 +8,6 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	
-	<!-- Replace the following values with your own -->
 	<artifactId>unittesting</artifactId>
 	<name>Unit Testing practice project</name>
 	<description>A project for practicing Unit Testing</description>
