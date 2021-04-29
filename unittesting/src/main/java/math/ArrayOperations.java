@@ -25,17 +25,29 @@ public class ArrayOperations {
 	 */
 	int[] findPrimesInFile(FileIO fileIo, String filepath, MyMath myMath) {
 
+		int[] numbers = null;
+
 		// Read the Integer numbers from the file.
-		int[] numbers = fileIo.readFile(filepath);
+		try {
+			numbers = fileIo.readFile(filepath);
+		} catch (IllegalArgumentException e) {
+			throw new IllegalArgumentException(e.getMessage());
+		}
+
 		List<Integer> primeNumbers = new ArrayList<>();
 
 		// Add only the prime numbers to the ArrayList.
 		for (int num : numbers) {
-			if (myMath.isPrime(num)) {
-				primeNumbers.add(num);
+			try {
+				if (myMath.isPrime(num)) {
+					primeNumbers.add(num);
+				}
+			} catch (IllegalArgumentException e) {
+				// do nothing
 			}
 		}
 
+		// Convert the ArrayList to an Array.
 		return primeNumbers.stream().mapToInt(i -> i).toArray();
 	}
 }
