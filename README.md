@@ -40,4 +40,7 @@ Make sure you have installed properly Git, Maven and Java.
 
 ## <a name="unittesting"></a>Unit Testing
 
-See more details about the Unit Testing assignment in the according [README.md](https://github.com/NikolasMoatsos/SEIP-Lab-Assignments/blob/development/unittesting/README.md).
+See more details about the Unit Testing assignment in the according [README.md](unittesting/README.md).
+
+## Licence 
+Licensed under the [MIT Licence](LICENSE). 
