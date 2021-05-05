@@ -9,8 +9,8 @@
 	</parent>
 	
 	<artifactId>unittesting</artifactId>
-	<name>Unit Testing practice project</name>
-	<description>A project for practicing Unit Testing</description>
+	<name>Unit Testing Assignment</name>
+	<description>A lab assignment that demonstrates Unit Testing with Java.</description>
 	
 	<dependencies>
 		<dependency>
