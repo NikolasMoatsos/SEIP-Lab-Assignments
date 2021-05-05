@@ -11,19 +11,19 @@ import org.junit.runners.Parameterized.Parameters;
 import math.MyMath;
 
 /**
- * A test class that implements a Parameterized test for the factorial method of
+ * A test class that implements a Parameterized test for the isPrime method of
  * MyMath class.
  * 
  * @author Nikolas Moatsos
  */
 @RunWith(Parameterized.class)
-public class MyMathParameterizedTest {
+public class MyMathIsPrimeParameterizedTest {
 
 	// the value is the id of each parameter
 	@Parameter(value = 0)
 	public int number;
 	@Parameter(value = 1)
-	public int factorial;
+	public boolean isPrime;
 
 	MyMath mm = new MyMath();
 
@@ -32,7 +32,8 @@ public class MyMathParameterizedTest {
 	 */
 	@Parameters
 	public static Collection<Object[]> data() {
-		Object[][] data = new Object[][] { { 0, 1 }, { 1, 1 }, { 2, 2 }, { 12, 479001600 } };
+		Object[][] data = new Object[][] { { 2, true }, { 7, true }, { 42, false }, { 37, true }, { 105, false },
+				{ 117, false } };
 
 		return Arrays.asList(data);
 	}
@@ -41,7 +42,7 @@ public class MyMathParameterizedTest {
 	 * A unit test that is executed for each pair of parameters.
 	 */
 	@Test
-	public void testFactorialWithNormalCases() {
-		Assert.assertEquals(factorial, mm.factorial(number));
+	public void testIsPrimeWithNormalCases() {
+		Assert.assertEquals(isPrime, mm.isPrime(number));
 	}
 }
