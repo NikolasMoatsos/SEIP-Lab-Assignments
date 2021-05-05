@@ -45,4 +45,6 @@ In order to build the project you must first make sure you have installed proper
 
 - Execute the command: <code>mvn test jacoco:report</code>.
 
-*The report of code coverage generated from JaCoCo is located in the following path:*  `unittesting/target/site/jacoco`
+*The report of code coverage generated from JaCoCo is located in the following path:*  `unittesting/target/site/jacoco`.
+
+In order to generate the cobertura coverage report include the `cobertura:cobertura` in your `mvn` command and in order to see the analysis in the Codecov website run succesfully a TravisCI build.
