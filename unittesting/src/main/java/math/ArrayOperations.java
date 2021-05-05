@@ -25,14 +25,8 @@ public class ArrayOperations {
 	 */
 	int[] findPrimesInFile(FileIO fileIo, String filepath, MyMath myMath) {
 
-		int[] numbers = null;
-
 		// Read the Integer numbers from the file.
-		try {
-			numbers = fileIo.readFile(filepath);
-		} catch (IllegalArgumentException e) {
-			throw new IllegalArgumentException(e.getMessage());
-		}
+		int[] numbers = fileIo.readFile(filepath);
 
 		List<Integer> primeNumbers = new ArrayList<>();
 
