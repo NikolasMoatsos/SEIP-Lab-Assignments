@@ -25,12 +25,14 @@ public class ArrayOperationsTest {
 		when(fileio.readFile(path)).thenReturn(new int[] { 2, 0, 99, 7, 32, 100, 97, 67, -50, 19, 65 });
 
 		when(mm.isPrime(2)).thenReturn(true);
+		when(mm.isPrime(0)).thenThrow(new IllegalArgumentException());
 		when(mm.isPrime(99)).thenReturn(false);
 		when(mm.isPrime(7)).thenReturn(true);
 		when(mm.isPrime(32)).thenReturn(false);
 		when(mm.isPrime(100)).thenReturn(false);
 		when(mm.isPrime(97)).thenReturn(true);
 		when(mm.isPrime(67)).thenReturn(true);
+		when(mm.isPrime(-50)).thenThrow(new IllegalArgumentException());
 		when(mm.isPrime(19)).thenReturn(true);
 		when(mm.isPrime(65)).thenReturn(false);
 
