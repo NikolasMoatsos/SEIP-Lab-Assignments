@@ -1,8 +1,13 @@
 # SEIP-Lab-Assignments
+[![Build Status](https://travis-ci.com/NikolasMoatsos/SEIP-Lab-Assignments.svg?token=hsTvfFtqwpyWiMP9NiyE&branch=main)](https://travis-ci.com/NikolasMoatsos/SEIP-Lab-Assignments)
+[![codecov](https://codecov.io/gh/NikolasMoatsos/SEIP-Lab-Assignments/branch/main/graph/badge.svg?token=7CQHIBNVSK)](https://codecov.io/gh/NikolasMoatsos/SEIP-Lab-Assignments)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 This repository contains the Lab Assignments for the needs of the Software Engineering in Practice (SEiP) course offered by the [Department of Management Science & Technology](https://www.dept.aueb.gr/en/dmst) of the Athens University of Economics and Business.
 
 ## Assignments:
 1. [Grades Histogram - Build Automation Tools](#build) 
+2. [Unit Testing](#unittesting)
 
 ---
 
@@ -32,3 +37,10 @@ Make sure you have installed properly Git, Maven and Java.
 6. Execute the jar file, with the command: <code>java -jar gradeshistogram-0.0.1-SNAPSHOT-jar-with-dependencies.jar grades.txt</code>.
 
 *Note that the gradeshistogram-0.0.1-SNAPSHOT.jar is not executable.*
+
+## <a name="unittesting"></a>Unit Testing
+
+See more details about the Unit Testing assignment in the according [README.md](unittesting/README.md).
+
+## Licence 
+Licensed under the [MIT Licence](LICENSE). 

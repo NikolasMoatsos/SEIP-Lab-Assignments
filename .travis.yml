@@ -1,0 +1,19 @@
+language: java
+
+jdk:
+  - openjdk8
+  
+branches:
+  only:
+  - master
+  - development
+
+before_script: 
+  - ls -la
+  
+script: 
+  - mvn clean package jacoco:report cobertura:cobertura
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -t c43e92fe-2f52-405f-baba-3e8c09cca2f9
+  - echo "Process terminated successfully."
