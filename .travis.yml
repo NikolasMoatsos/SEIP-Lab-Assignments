@@ -5,7 +5,7 @@ jdk:
   
 branches:
   only:
-  - master
+  - main
   - development
 
 before_script: 
