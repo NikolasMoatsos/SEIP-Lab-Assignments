@@ -46,7 +46,7 @@ class Regex extends Analyzer {
 	        
 			return loc;
         } else {
-            return -1;
+            throw new IllegalArgumentException("Operation aborted due to unknown file reader");
         }
     }
 
@@ -63,7 +63,7 @@ class Regex extends Analyzer {
 	        }
 			return methodCounter;
         } else {
-            return -1;
+            throw new IllegalArgumentException("Operation aborted due to unknown file reader");
         }
     }
 
@@ -80,7 +80,7 @@ class Regex extends Analyzer {
 	        }
 			return classCounter;
         } else {
-            return -1;
+            throw new IllegalArgumentException("Operation aborted due to unknown file reader");
         }
     }
 }
@@ -104,7 +104,7 @@ class Strcomp extends Analyzer {
 			int loc = sourceCodeList.size() - nonCodeLinesCounter;
 			return loc;
         } else {
-            return -1;
+            throw new IllegalArgumentException("Operation aborted due to unknown file reader");
         }
     }
 
@@ -122,7 +122,7 @@ class Strcomp extends Analyzer {
             }
             return methodCounter;
         } else {
-            return -1;
+            throw new IllegalArgumentException("Operation aborted due to unknown file reader");
         }
     }
 
@@ -139,7 +139,7 @@ class Strcomp extends Analyzer {
             }
             return classCounter;
         } else {
-            return -1;
+            throw new IllegalArgumentException("Operation aborted due to unknown file reader");
         }
     }
 
@@ -153,16 +153,16 @@ class NullAnalyzer extends Analyzer {
 
     @Override
     public int calculateLOC() throws IOException {
-       return -2;
+       return -1;
     }
 
     @Override
     public int calculateNOM() throws IOException {
-        return -2;
+        return -1;
     }
 
     @Override
     public int calculateNOC() throws IOException {
-       return -2;
+       return -1;
     }
 }

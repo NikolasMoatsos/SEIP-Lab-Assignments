@@ -23,8 +23,8 @@ public class DemoClient {
 			System.exit(1);
 		}
 
-		SourceCodeAnalyzerFacade scafacade = new SourceCodeAnalyzerFacade(sourceCodeAnalyzerType, filepath, sourceFileLocation, outputFileType, outputFilePath);
-		scafacade.executeAnalysis();
+		SourceCodeAnalyzerFacade scafacade = new SourceCodeAnalyzerFacade();
+		scafacade.executeAnalysis(sourceCodeAnalyzerType, filepath, sourceFileLocation, outputFileType, outputFilePath);
 	}
 
 }
