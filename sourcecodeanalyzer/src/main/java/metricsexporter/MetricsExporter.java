@@ -47,6 +47,6 @@ class NullWriter implements MetricsExporter {
 
     @Override
     public void writeFile(Map<String, Integer> metrics, String filepath) {
-        System.err.println("Operation aborted due to unknown file writer");
+        throw new IllegalArgumentException("Operation aborted due to unknown file writer");
     }
 }

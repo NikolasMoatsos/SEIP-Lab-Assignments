@@ -6,7 +6,7 @@ import java.io.IOException;
 public class DemoClient {
 
 	public static void main(String[] args) throws IOException {
-		String filepath = "src/main/resources/TestClass.java";
+		String filepath = "sourcecodeanalyzer/src/main/resources/TestClass.java";
 		String sourceCodeAnalyzerType = "regex";
 		String sourceFileLocation = "local";
 		String outputFilePath = "output_metrics";
