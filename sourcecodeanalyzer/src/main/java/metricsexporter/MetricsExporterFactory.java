@@ -1,8 +1,8 @@
-package codeanalyzer;
+package metricsexporter;
 
 public class MetricsExporterFactory {
     
-    public MetricsExporter createMetricExporter(String fileType) {
+    public MetricsExporter createMetricsExporter(String fileType) {
         MetricsExporter exporter;
         if (fileType.equals("csv")) {
             exporter = new CsvWriter();

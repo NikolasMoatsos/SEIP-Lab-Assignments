@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import filereader.*;
 
 public abstract class Analyzer {
     protected String filepath;

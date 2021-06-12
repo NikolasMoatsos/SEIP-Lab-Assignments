@@ -1,4 +1,4 @@
-package codeanalyzer;
+package filereader;
 
 public class SourceFileReaderFactory {
     

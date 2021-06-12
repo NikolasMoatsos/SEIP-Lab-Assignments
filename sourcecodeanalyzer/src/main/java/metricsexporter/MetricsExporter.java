@@ -1,4 +1,4 @@
-package codeanalyzer;
+package metricsexporter;
 
 import java.io.File;
 import java.io.FileWriter;

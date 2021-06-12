@@ -1,8 +1,10 @@
-package codeanalyzer;
+package core;
 
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import metricsexporter.*;
+import codeanalyzer.*;
 
 public class SourceCodeAnalyzerFacade {
     String analyzerType;
@@ -35,7 +37,7 @@ public class SourceCodeAnalyzerFacade {
             System.err.println("Operation Aborted due to unknown analyzer type");
         } else {
             MetricsExporterFactory mefactory = new MetricsExporterFactory();
-            MetricsExporter exporter = mefactory.createMetricExporter(outputFileType);
+            MetricsExporter exporter = mefactory.createMetricsExporter(outputFileType);
 
             exporter.writeFile(metrics, outputFilePath);
         }

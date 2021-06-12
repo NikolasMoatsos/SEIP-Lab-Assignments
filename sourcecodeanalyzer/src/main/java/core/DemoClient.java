@@ -1,8 +1,7 @@
-package demo;
+package core;
 
 import java.io.IOException;
 
-import codeanalyzer.*;
 
 public class DemoClient {
 
