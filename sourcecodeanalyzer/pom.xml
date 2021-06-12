@@ -9,8 +9,8 @@
 	</parent>
 
 	<artifactId>sourcecodeanalyzer</artifactId>
-	<name>Design Patterns assignment's code base</name>
-	<description>This module contains the code base for the design pattern assignment</description>
+	<name>Design Patterns Assignment</name>
+	<description>This module contains the refactored project for the design pattern assignment</description>
 
 	<dependencies>
 		<dependency>

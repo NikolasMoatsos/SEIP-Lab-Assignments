@@ -8,6 +8,7 @@ This repository contains the Lab Assignments for the needs of the Software Engin
 ## Assignments:
 1. [Grades Histogram - Build Automation Tools](#build) 
 2. [Unit Testing](#unittesting)
+3. [Source Code Analyzer - Design Patterns](#designpatterns)
 
 ---
 
@@ -41,6 +42,10 @@ Make sure you have installed properly Git, Maven and Java.
 ## <a name="unittesting"></a>Unit Testing
 
 See more details about the Unit Testing assignment in the according [README.md](unittesting/README.md).
+
+## <a name="designpatterns"></a>Source Code Analyzer - Design Patterns
+
+See more details about the Design Patterns assignment in the according [README.md](sourcecodeanalyzer/README.md).
 
 ## Licence 
 Licensed under the [MIT Licence](LICENSE). 
