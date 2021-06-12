@@ -8,7 +8,12 @@ import codeanalyzer.*;
 
 public class SourceCodeAnalyzerFacade {
 
-    public void executeAnalysis(String analyzerType, String filepath, String fileReaderType, String outputFileType, String outputFilePath) throws IOException  {
+    public void executeAnalysis(String analyzerType, String filepath, String fileReaderType, String outputFileType, String outputFilePath) throws IOException  { 
+        Map<String, Integer> metrics = createMetrics(analyzerType, filepath, fileReaderType);
+        exportMetrics(metrics, outputFileType, outputFilePath);
+    }
+
+    public Map<String, Integer> createMetrics(String analyzerType, String filepath, String fileReaderType) throws IOException {
         AnalyzerFactory afactory = new AnalyzerFactory();
         Analyzer a = afactory.createAnalyzer(analyzerType, filepath, fileReaderType);
         
@@ -21,10 +26,14 @@ public class SourceCodeAnalyzerFacade {
         if(metrics.get("loc") == -1 || metrics.get("nom") == -1 || metrics.get("noc") == -1) {
             throw new IllegalArgumentException("Operation aborted due to unknown analyzer type");
         }
-        
+
+        return metrics;
+    }
+
+    public void exportMetrics(Map<String, Integer> metrics, String outputFileType, String outputFilePath) {
         MetricsExporterFactory mefactory = new MetricsExporterFactory();
         MetricsExporter exporter = mefactory.createMetricsExporter(outputFileType);
 
-        exporter.writeFile(metrics, outputFilePath); 
+        exporter.writeFile(metrics, outputFilePath);
     }
 }
