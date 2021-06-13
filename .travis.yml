@@ -17,7 +17,7 @@ script:
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t c43e92fe-2f52-405f-baba-3e8c09cca2f9
   - cd sourcecodeanalyzer
-  - java -jar target/sourcecodeanalyzer-0.0.1-SNAPSHOT-jar-with-dependencies.jar src/test/resources/TestClass.java strcomp local ./output_metrics_file csv
+  - java -jar target/sourcecodeanalyzer-0.0.1-SNAPSHOT-jar-with-dependencies.jar src/test/resources/TestClass.java regex local ./output_metrics_file csv
   - DIFF=$(diff output_metrics_file.csv src/test/resources/integration_test_file.csv) 
   - if [ "$DIFF" != "" ]; then
       echo "The integration test was unsuccessful";
