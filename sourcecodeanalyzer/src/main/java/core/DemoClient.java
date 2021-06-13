@@ -16,7 +16,7 @@ public class DemoClient {
 		String filepath = "sourcecodeanalyzer/src/main/resources/TestClass.java";
 		String sourceCodeAnalyzerType = "regex";
 		String sourceFileLocation = "local";
-		String outputFilePath = "output_metrics";
+		String outputFilePath = "output_metrics_file";
 		String outputFileType = "csv";
 
 		if (args.length == 5) {
