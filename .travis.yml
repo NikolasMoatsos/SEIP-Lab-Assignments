@@ -21,6 +21,7 @@ after_success:
   - DIFF=$(diff output_metrics_file.csv src/test/resources/integration_test_file.csv) 
   - if [ "$DIFF" != "" ]; then
       echo "The integration test was unsuccessful";
+      exit 1;
     else
       echo "The integration test was successful";
     fi
