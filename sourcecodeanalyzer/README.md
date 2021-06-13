@@ -54,7 +54,7 @@ Here you can see the class diagram of the refactored system:
 
 In the initial system the client module was providing multi-step services (generate metrics and export metrics). To avoid that the Facade class was created.
 
-#### Benefits:
+#### Benefits
 - **Simplier interface to a complex system**. The client is only responsible for the programs arguments.
 - **De-couples the subsystem for clients and and other subsystems**. The client module is responsible now only for the interaction with the user.
 - **Layers the subsystem**. With facade we define the entry level of each subsystem. In this case the starting points of the creation of metrics and the exportion of the metrics are defined accuretely. Also, the subsystems cmmunicate only with the help of the facade.
@@ -68,7 +68,7 @@ The classes participating in the Facade pattern are the following:
 
 In the initial system there were limited classes and the creation of objects was achieved either in the client or inside some classes. To avoid that the factory pattern was used in some points.
 
-#### Benefits:
+#### Benefits
 - **Separation of concerns**. The logic to instatiate is classes is separated and now the factory classes is responsible to create the appropriate objects.
 - **Flexibility**. We can extend, easily, the different types of classes, without modifying the client.
 
