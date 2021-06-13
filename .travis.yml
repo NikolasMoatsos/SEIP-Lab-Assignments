@@ -19,7 +19,7 @@ after_success:
   - cd sourcecodeanalyzer
   - java -jar target/sourcecodeanalyzer-0.0.1-SNAPSHOT-jar-with-dependencies.jar src/test/resources/TestClass.java strcomp local ./output_metrics_file csv
   - DIFF=$(diff diff output_metrics_file.csv sourcecodeanalyzer/src/test/resources/integration_test_file.csv) 
-    if [ "$DIFF" != "" ]; then
+  - if [ "$DIFF" != "" ]; then
       echo "The integration test was successful"
     else
       echo "The integration test was unsuccessful"
