@@ -2,7 +2,14 @@ package core;
 
 import java.io.IOException;
 
-
+/**
+ * The client class that interprets the program's arguments and call the main
+ * facade method.
+ *
+ * @author NikolasMoatsos
+ * @version 1.0
+ * @since 2021-06-13
+ */
 public class DemoClient {
 
 	public static void main(String[] args) throws IOException {
@@ -11,8 +18,8 @@ public class DemoClient {
 		String sourceFileLocation = "local";
 		String outputFilePath = "output_metrics";
 		String outputFileType = "csv";
-		
-		if(args.length == 5) {
+
+		if (args.length == 5) {
 			filepath = args[0];
 			sourceCodeAnalyzerType = args[1];
 			sourceFileLocation = args[2];
